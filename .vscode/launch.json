@@ -1,15 +1,11 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
     "configurations": [
         {
-            "name": "PowerShell Launch Script",
-            "type": "PowerShell",
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
             "request": "launch",
-            "script": "Enter path or command to execute, for example, ${workspaceFolder}/src/foo.ps1 or Invoke-Pester",
-            "cwd": "${cwd}"
+            "program": "${file}",
+            "console": "integratedTerminal"
         },
         {
             "name": "Python Debugger: Current File",
@@ -19,10 +15,62 @@
             "console": "integratedTerminal"
         },
         {
-            "command": "npm start",
-            "name": "Run npm start",
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
             "request": "launch",
-            "type": "node-terminal"
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
         },
         {
             "name": "Python Debugger: Current File",
@@ -74,25 +122,32 @@
             "webRoot": "${workspaceFolder}"
         },
         {
-            "name": "Launch Chrome",
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
             "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
             "type": "chrome",
-            "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         },
         {
-            "type": "hmmm",
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
             "request": "launch",
-            "name": "Debug HMMM",
             "program": "${file}",
-            "isBinary": false
-        },
-        {
-            "type": "hmmm",
-            "request": "launch",
-            "name": "Debug HMMM (Binary)",
-            "program": "${file}",
-            "isBinary": true
+            "console": "integratedTerminal"
         }
     ]
 }
